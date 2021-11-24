@@ -158,11 +158,11 @@ def event_handle(event,json_line):
         elif msg == "ไปเที่ยวกันไหม":
             replyObj = TextSendMessage(text="ไปดิ")
             line_bot_api.reply_message(rtoken, replyObj)
-        elif msg == "โอเค"
-           replyObj = TextSendMessage(text="จ้าๆ")
+        elif msg == "โอเค":
+            replyObj = TextSendMessage(text="จ้าๆ")
             line_bot_api.reply_message(rtoken, replyObj)
         else:
-            headers = request.headers
+           headers = request.headers
            json_headers = ({k:v for k, v in headers.items()})
            json_headers.update({'Host':'bots.dialogflow.com'})
            url = "https://dialogflow.cloud.google.com/v1/integrations/line/webhook/a125a38d-c6e6-4d18-8c12-b9c8373aa989"
